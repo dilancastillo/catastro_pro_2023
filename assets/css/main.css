@@ -1,0 +1,932 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Raleway";
+}
+
+#whatsapp-icon {
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    width: 45px;
+    z-index: 10000;
+    transition: transform 0.3s ease-in-out;
+}
+
+#whatsapp-icon:hover {
+    transform: scale(3) translateX(-10px);
+}
+
+.navbar-home-right {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    /* Asegúrate de que la barra de navegación aparezca a la derecha */
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.navbar-home-right .navbar-links {
+    margin-top: 5rem;
+}
+
+.navbar-home-right a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000000;
+    display: block;
+    text-align: right;
+    margin-right: 5rem;
+}
+
+.navbar-home-right .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 0.9rem;
+    margin-top: 1.2rem;
+}
+
+.banner-home {
+    background: url("../img/banner-home.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-home .container,
+.funcionalidades-banner .container {
+    position: relative;
+}
+
+.top-images-banner {
+    position: fixed !important;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    padding-bottom: 0.5rem;
+}
+
+.top-images-banner,
+.top-images,
+.funcionalidades-banner .top-images {
+    position: fixed !important;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.top-images-banner img,
+.top-images img,
+.funcionalidades-banner .top-images img {
+    margin-top: 1.3rem;
+}
+
+.top-image-1,
+.funcionalidades-banner .top-image-1 {
+    width: auto;
+    height: 1.2rem;
+    margin-left: 3rem;
+}
+
+.top-image-2 {
+    width: auto;
+    height: 3rem;
+}
+
+.top-image-3,
+.funcionalidades-banner .top-image-3 {
+    width: auto;
+    height: 1.5rem;
+    margin-right: 3rem;
+}
+
+.banner-home .botones-home {
+    margin-left: 2rem;
+}
+
+.banner-home .botones-home img {
+    max-width: 30%;
+    height: auto;
+    margin-top: -8rem;
+    transition: all 0.8s ease;
+}
+
+.banner-home .botones-home img:hover {
+    transform: translateY(-35px);
+}
+
+.banner-home .text {
+    margin-top: 7.5rem;
+    font-family: 'Rubik', open-sans;
+}
+
+.zoom {
+    transition: transform 0.7s ease;
+    transform-origin: center;
+}
+
+.zoom:hover {
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+}
+
+.banner-home h1 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-left: 20rem;
+    text-align: center;
+}
+
+.banner-home p {
+    font-size: 1.1rem;
+    margin-left: 24rem;
+
+}
+
+.banner-home p img {
+    width: 32%;
+    height: 32%;
+    margin-left: 5rem;
+}
+
+.tramites-home {
+    background: url("../img/tramites-catastro-pro.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.tramites-home .tramites-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.tramites-home .tramites-menu a.active {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    position: relative;
+}
+
+.tramites-home .tramites-menu a.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    height: 30px;
+    width: 1px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+
+.tramites-home .tramites-text {
+    padding-top: 1rem;
+}
+
+.tramites-home .tramites-text img {
+    width: 25%;
+    height: auto;
+    margin-left: 8rem;
+}
+
+.tramites-home .tramites-menu {
+    padding-top: 1rem;
+}
+
+.tramites-home .ji {
+    margin-left: 5rem !important;
+}
+
+.tramites-home .clipped-img {
+    position: absolute;
+    left: -100%;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.card-image {
+    position: relative;
+}
+
+.objetivos-home {
+    background: url("../img/objetivos-catastro-pro.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+}
+
+.objetivos-home .sistema-intuitivo {
+    padding-top: 12rem;
+    padding-left: 32rem;
+}
+
+.objetivos-home .objetivos {
+    padding-top: 5.5rem;
+    padding-left: 9.8rem;
+}
+
+.objetivos-home .sistema-intuitivo h2,
+.objetivos-home .objetivos h2 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.objetivos-home .sistema-intuitivo p,
+.objetivos-home .objetivos p {
+    font-size: 0.8rem;
+}
+
+.nosotros-home {
+    background: url("../img/nosotros.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.nosotros-home .row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nosotros-home .nosotros-home-text {
+    background-color: #fff;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-radius: 0.7rem;
+    margin-right: 3rem;
+}
+
+.beneficios-home {
+    background: url("../img/beneficios-catastro-pro.jpg");
+    background-size: cover;
+    background-position: center 67%;
+    width: 100%;
+    height: 110vh;
+}
+
+.beneficios-home .beneficios-iconos-1 {
+    justify-content: center;
+    padding-top: 1rem;
+    position: relative;
+    top: -10.5vh;
+}
+
+.beneficios-home .beneficios-iconos-1 h2,
+.beneficios-home .beneficios-iconos-2 h2 {
+    font-size: 1rem;
+    margin-top: 0.8rem !important;
+    font-weight: 600 !important;
+    font-family: 'Rubik', open-sans;
+}
+
+.beneficios-home .beneficios-iconos-1 p,
+.beneficios-home .beneficios-iconos-2 p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Rubik', open-sans;
+}
+
+.beneficios-home .beneficios-iconos-1 .col-md-4 {
+    margin: 0 -75px;
+}
+
+.beneficios-home .beneficios-iconos-2 .col-md-4 {
+    margin: 0 -30px;
+}
+
+.beneficios-home .beneficios-iconos-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios-home .beneficios-iconos-1 img,
+.beneficios-home .beneficios-iconos-2 img {
+    width: 35%;
+}
+
+.beneficios-home .beneficios-iconos-2 img {
+    margin-top: -3.5rem;
+}
+
+.beneficios-home .beneficios-title {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.beneficios-home .beneficios-title h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.contactanos-home {
+    background: url("../img/contactanos-catastro-pro.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contactanos-home .contactanos-text h2 {
+    font-size: 2.9rem;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.contactanos-home .contactanos-text {
+    margin-top: 14rem;
+    margin-right: 5rem;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.contactanos-home .contactanos-text a {
+    color: #1C74AF;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.title-sistema-pro-1 h1,
+.title-sistema-pro-2 h1 {
+    text-align: right;
+    font-weight: 800;
+    font-size: 6rem;
+    margin-top: 1rem;
+    font-family: 'Rubik', open-sans;
+}
+
+.title-sistema-pro-1 h1 {
+    color: #FFBC1A;
+}
+
+.title-sistema-pro-2 h1 {
+    color: #1C74AF;
+}
+
+.title-sistema-pro-1 img,
+.title-sistema-pro-2 img {
+    width: 15%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.title-sistema-pro-1 p,
+.title-sistema-pro-2 p {
+    text-align: right;
+    font-weight: 600;
+}
+
+.title-sistema-pro-1 .abstract-design,
+.title-sistema-pro-2 .abstract-design {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 55%;
+    margin-left: -1.5rem;
+    margin-bottom: -1.3rem;
+}
+
+.sistema-pro-1-categorias .abstract-design-2,
+.sistema-pro-2-categorias .abstract-design-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 18%;
+    margin-left: 65rem;
+    margin-bottom: 20.5rem;
+}
+
+.categorias {
+    background: url("../img/image-3.png") no-repeat;
+    background-size: cover;
+}
+
+.sistema-pro-1 {
+    background: url("../img/title-1.png") no-repeat;
+    background-position: left 50%;
+}
+
+.sistema-pro-2 {
+    background: url("../img/title-3.png") no-repeat;
+    background-position: left 50%;
+}
+
+.sistema-pro-1 .container {
+    margin-left: 12rem !important;
+}
+
+.sistema-pro-2 .container {
+    margin-left: 12rem !important;
+}
+
+.sistema-pro-1 h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sistema-pro-1 p {
+    font-size: 1rem;
+}
+
+.sistema-pro-1-categorias,
+.sistema-pro-2-categorias {
+    margin-right: 59.5rem;
+}
+
+.sistema-pro-1-categorias .position-absolute,
+.sistema-pro-2-categorias .position-absolute {
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 15px;
+    margin-left: 7rem;
+    margin-top: -6rem;
+}
+
+.sistema-pro-1-categorias .position-absolute {
+    background-color: #1C74AF;
+}
+
+.sistema-pro-2-categorias .position-absolute {
+    background-color: #FFBC1A;
+}
+
+.sistema-pro-1-categorias .position-absolute h4,
+.sistema-pro-2-categorias .position-absolute h4 {
+    margin-top: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.sistema-pro-1-categorias .position-absolute ul,
+.sistema-pro-2-categorias .position-absolute ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sistema-pro-1-categorias .position-absolute a,
+.sistema-pro-2-categorias .position-absolute a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sistema-pro-1-categorias .enlace-sistema-pro-2,
+.sistema-pro-2-categorias .enlace-sistema-pro-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: -20rem;
+    margin-bottom: 1rem;
+}
+
+.sistema-pro-1-categorias .enlace-sistema-pro-2 a,
+.sistema-pro-2-categorias .enlace-sistema-pro-2 a {
+    text-decoration: none;
+    color: #8A9A9E;
+    font-weight: 600;
+}
+
+.funcionalidades-banner {
+    background: url("../img/funcionalidades-banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 27vh;
+    background-position: center;
+}
+
+.funcionalidades-banner h1 {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.funcionalidades-linea {
+    border-top: 2px solid #ffffff !important;
+    width: 50%;
+    margin: 0 auto;
+}
+
+@keyframes rellenar {
+    to {
+        stroke-dasharray: var(--porcentaje) 100;
+    }
+}
+
+.porcentajes {
+    position: relative;
+}
+
+.porcentajes span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: .0.7rem Verdana;
+    font-weight: 700;
+}
+
+circle {
+    fill: #EAECEB;
+    stroke: #AAA;
+    stroke-width: 5;
+    stroke-dasharray: 100 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+}
+
+circle:nth-child(2) {
+    stroke: var(--color);
+    stroke-dasharray: 0 100;
+    animation: rellenar .80s linear forwards;
+}
+
+.funcionalidades-graficos .row .col-md-3,
+.funcionalidades-graficos .row .col-md-6 {
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+
+.funcionalidades-iconos {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/funcionalidades-iconos.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.funcionalidades-iconos .row {
+    color: #ffffff;
+    padding-top: 3rem;
+}
+
+.funcionalidades-iconos h2 {
+    font-weight: 600;
+}
+
+.funcionalidades-iconos p {
+    font-size: 1.3rem;
+}
+
+.funcionalidades-iconos .funcionalidades-linea {
+    width: 30%;
+    border: 1px solid #fff;
+}
+
+.funcionalidades-iconos img {
+    width: auto;
+    height: 70%;
+}
+
+.funcionalidades-testimonios {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.funcionalidades-testimonios h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.funcionalidades-testimonios p {
+    font-size: 0.9rem;
+}
+
+.funcionalidades-testimonios .service-icon {
+    background-color: #fff;
+    color: #000000;
+    height: 5rem;
+    width: 5rem;
+    display: block;
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.funcionalidades-banner h1 {
+    padding-top: 4.5rem;
+}
+
+.funcionalidades-testimonios .rounded-circle {
+    border-radius: 50% !important;
+}
+
+.funcionalidades-capacidades {
+    background: url("../img/funcionalidades-capacidades.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+}
+
+.funcionalidades-capacidades h2 {
+    text-align: center;
+    padding-top: 5rem;
+    font-weight: 400;
+}
+
+.funcionalidades-capacidades p {
+    font-weight: 500;
+}
+
+.funcionalidades-capacidades .funcionalidades-linea-capacidades {
+    width: 10%;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.funcionalidades-capacidades img {
+    width: 120%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.funcionalidades-capacidades .funcionalidades-img-1 {
+    margin-left: -9rem;
+}
+
+.funcionalidades-capacidades .funcionalidades-img-2 {
+    margin-left: 4rem;
+}
+
+.footer-home {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer-home h2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.footer-home .ml-3 {
+    margin-left: 2rem;
+}
+
+.linea {
+    border-top: 1px solid white;
+}
+
+.linea-2 {
+    border-top: 4px solid white;
+    width: 30%;
+    margin: auto;
+}
+
+.contactanos-page {
+    background: url("../img/contactanos.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contactanos-page h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.contactanos-page h2 {
+    font-size: 1.3rem;
+}
+
+.contactanos-page .logo {
+    width: auto;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contactanos-page .contactanos-telefono span {
+    margin-right: 1.5rem;
+}
+
+.contactanos-page .contactanos-telefono {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contactanos-page .contactanos-telefono img {
+    width: auto;
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+
+.contactanos-page .btn {
+    background-color: #FFBC1A;
+    margin-top: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.contactanos-page .servicios-contactanos {
+    margin-top: 7rem;
+}
+
+.contactanos-page .botones-contactanos {
+    display: flex;
+}
+
+.contactanos-page .botones-contactanos img {
+    width: 45%;
+    height: 45%;
+    margin-right: 1rem;
+}
+
+.contactanos-page .botones-contactanos .boton-funcionalidades {
+    width: 51%;
+    height: 51%;
+}
+
+.contactanos-page .servicios-contactanos img {
+    transition: all 0.8s ease;
+}
+
+.contactanos-page .servicios-contactanos img:hover {
+    transform: translateY(-3px);
+}
+
+@media (min-width: 1400px) {
+
+    .top-image-1 {
+        width: auto;
+        height: 2rem;
+        margin-left: 3rem;
+    }
+
+    .top-image-2 {
+        width: auto;
+        height: 4rem;
+    }
+
+    .top-image-3 {
+        width: auto;
+        height: 2rem;
+        margin-right: 3rem;
+    }
+
+    .banner-home .botones-home {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .banner-home .botones-home img {
+        min-width: 18rem;
+        height: auto;
+        margin-top: -7rem;
+        transition: all 0.7s ease;
+    }
+
+    .banner-home .text {
+        margin-top: 6rem;
+    }
+
+    .banner-home h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-left: 26rem;
+    }
+
+    .banner-home p {
+        font-size: 1.5rem;
+        margin-left: 26rem;
+    }
+
+    .banner-home p img {
+        width: 50%;
+        height: 50%;
+        margin-left: 5rem;
+    }
+
+    .tramites-home .tramites-menu a {
+        font-size: 1.2rem;
+    }
+
+    .tramites-home .tramites-text {
+        font-size: 1.7rem;
+    }
+
+    .tramites-home .card-image {
+        width: 40rem;
+    }
+
+    .objetivos-home .sistema-intuitivo h2,
+    .objetivos-home .objetivos h2 {
+        font-size: 1.7rem;
+    }
+
+    .objetivos-home .sistema-intuitivo p,
+    .objetivos-home .objetivos p {
+        font-size: 1rem;
+    }
+
+    .objetivos-home .objetivos {
+        padding-top: 12rem;
+        padding-left: 3rem;
+    }
+
+    .nosotros-home .nosotros-home-text {
+        font-size: 1.5rem;
+    }
+
+    .beneficios-home .beneficios-iconos-1 h2,
+    .beneficios-home .beneficios-iconos-2 h2 {
+        font-size: 1.4rem;
+    }
+
+    .beneficios-home .beneficios-iconos-1 p,
+    .beneficios-home .beneficios-iconos-2 p {
+        font-size: 0.9rem;
+    }
+
+    .beneficios-home .beneficios-iconos-1 .col-md-4 {
+        margin: 0 -85px;
+    }
+
+    .beneficios-home .beneficios-iconos-1 img,
+    .beneficios-home .beneficios-iconos-2 img {
+        width: 40%;
+    }
+
+    .contactanos-home .contactanos-text h2 {
+        font-size: 3rem !important;
+    }
+
+    .contactanos-home .contactanos-text {
+        font-size: 1.7rem !important;
+    }
+
+    .contactanos-page .contactanos-telefono {
+        font-size: 1.4rem;
+    }
+
+    .contactanos-page .contactanos-telefono img {
+        width: auto;
+        height: 1.3rem;
+    }
+
+    .contactanos-page h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .contactanos-page .btn {
+        font-size: 1.3rem;
+    }
+
+    .contactanos-page h2 {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contactanos-page .servicios-contactanos {
+        margin-top: 20rem !important;
+    }
+
+    .contactanos-page .botones-contactanos img {
+        width: 55%;
+        height: 55%;
+    }
+
+    .contactanos-page .botones-contactanos .boton-funcionalidades {
+        width: 62%;
+        height: 62%;
+    }
+}

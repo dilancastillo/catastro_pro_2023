@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catastro Pro</title>
+    <link rel="stylesheet" type="text/css" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendor/fullpage/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <div id="navbar-home" class="navbar-home-right">
+        <div class="navbar-links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">MENÚ ×</a>
+            <!-- Agrega tus enlaces aquí -->
+            <a href="./sistema_pro_1.html">SISTEMA 1</a>
+            <a href="./sistema_pro_2.html">SISTEMA 2</a>
+            <a href="./funcionalidades.html">FUNCIONALIDADES</a>
+            <a href="#nosotros-home">NOSOTROS</a>
+            <a href="./contactanos.html">CONTÁCTANOS</a>
+        </div>
+    </div>
+
+    <div class="static-elements">
+        <div class="top-images-banner">
+            <a href="./index.html"><img id="icono-home" src="./assets/img/Icon feather-home.png" class="top-image-1"
+                    alt=""
+                    onmouseover="changeImage('icono-home', './assets/img/Icon feather-home (Estado con cursor encima).png')"
+                    onmouseout="changeImage('icono-home', './assets/img/Icon feather-home.png')"></a>
+            <img src="./assets/img/logo-1.png" class="top-image-2" alt="">
+            <img src="./assets/img/MENU.png" class="top-image-3" onclick="openNav()" alt="">
+        </div>
+        <a href="https://wa.me/3138451899" target="_blank">
+            <img id="whatsapp-icon" src="./assets/img/whatsapp.png" alt="Icono de WhatsApp"
+                onmouseover="changeImage('whatsapp-icon', './assets/img/pngwing.com.png')"
+                onmouseout="changeImage('whatsapp-icon', './assets/img/whatsapp.png')">
+        </a>
+    </div>
+
+
+    <!--<div id="fullpage">-->
+    <section class="banner-home section">
+        <div class="row justify-content-end">
+            <div class="col-lg-7 col-xl-7">
+                <div class="container">
+                    <div class="text">
+                        <h1>SOFTWARE PRO PARA LA GESTIÓN CATASTRAL</h1>
+                        <p class="mt-4">Somos un software desarrollado<br /> con la última tecnología<br />
+                            cumpliendo:</p>
+                        <p>• Agilidad de trámites para soportar<br /> el “Catastro como servicio público”.</p>
+                        <p>• Facilidad de uso y seguridad de la<br /> información.</p>
+                        <p>• Cumplimiento de la normatividad<br /> colombiana en el tema catastral.</p>
+                        <p>
+                            <a href="./contactanos.html"><img id="contacto-boton-1" src="./assets/img/CONTACTANOS.png"
+                                    class="mt-5 zoom" alt=""
+                                    onmouseover="changeImage('contacto-boton-1', './assets/img/CONTACTANOS (Estado con cursor encima).png')"
+                                    onmouseout="changeImage('contacto-boton-1', './assets/img/CONTACTANOS.png')"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-xl-8">
+                <div class="container">
+                    <div class="botones-home">
+                        <a href="./sistema_pro_1.html" target="_blank"><img id="img1"
+                                src="./assets/img/sistema pro 1.png" alt=""
+                                onmouseover="changeImage('img1', './assets/img/sistema pro 1 (Estado con cursor encima).png')"
+                                onmouseout="changeImage('img1', './assets/img/sistema pro 1.png')"></a>
+                        <a href="./sistema_pro_2.html" target="_blank"><img id="img2"
+                                src="./assets/img/sistema pro 2.png" alt=""
+                                onmouseover="changeImage('img2', './assets/img/sistema pro 2 (Estado con cursor encima).png')"
+                                onmouseout="changeImage('img2', './assets/img/sistema pro 2.png')"></a>
+                        <a href="./funcionalidades.html" target="_blank"><img id="img3"
+                                src="./assets/img/funcionalidades.png" alt=""
+                                onmouseover="changeImage('img3', './assets/img/funcionalidades (Estado con cursor encima).png')"
+                                onmouseout="changeImage('img3', './assets/img/funcionalidades.png')"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="tramites-home section">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="tramites-menu mb-5">
+                            <a href="javascript:void(0)" id="link-1" class="active">TRÁMITES</a>
+                            <a href="javascript:void(0)" id="link-2">VENTAJAS</a>
+                            <a href="javascript:void(0)" id="link-3">HABILITACIÓN</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tramites-images">
+                            <div id="image-1" class="card card-image" style="width: 25rem;">
+                                <img src="./assets/img/Desenglobe_de_un_predio-main.png"
+                                    class="card-img-top clipped-img" alt="">
+                                <img id="img1" src="./assets/img/loteos-1024x683.png" class="card-img-top ji" alt="...">
+                            </div>
+                            <div id="image-2" class="card card-image" style="width: 25rem; display: none;">
+                                <img src="./assets/img/3NK4IDQAMJGL3K43MGZIMZ4DVU.png" class="card-img-top" alt="...">
+                            </div>
+                            <div id="image-3" class="card card-image" style="width: 25rem; display: none;">
+                                <img src="./assets/img/Referencia-catastral2.png" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 tramites-text" id="text-1">
+                    <h2 class="display-8 mb-4">TRÁMITES</h2>
+                    <p class="mb-3 fw-bold">Catastro PRO permite realizar de manera rápida y segura los
+                        siguientes
+                        trámites:</p>
+                    <p>- Cambios de propietario<br />
+                        - Englobes o desenglobes<br />
+                        - Incorporación de construcciones<br />
+                        - Autoestimaciones del avalúo<br />
+                        - Inscripción de predios nuevos<br />
+                        - Rectificaciones de área<br />
+                        - Cancelación de predios<br />
+                        - Depuración cartográfica</p>
+                    <p><a href="./contactanos.html"><img id="contacto-boton-2" src="./assets/img/CONTACTANOS.png"
+                                class="mt-5 zoom" alt=""
+                                onmouseover="changeImage('contacto-boton-2', './assets/img/CONTACTANOS (Estado con cursor encima).png')"
+                                onmouseout="changeImage('contacto-boton-2', './assets/img/CONTACTANOS.png')"></a>
+                    </p>
+                </div>
+                <div class="col-md-6 tramites-text" id="text-2" style="display: none;">
+                    <h2 class="display-7 mb-4">VENTAJAS</h2>
+                    <p class="mb-3 fw-bold">Catastro PRO tiene ventajas sobre otros sistemas:</p>
+                    <p>- Tiene su propio editor geográfico.<br />
+                        - Compatible con ArcGis y Qgis.<br />
+                        - No requiere licenciamiento adicional.<br />
+                        - Adopta las áreas digitales de los predios y construcciones.<br />
+                        - Carga el histórico que tiene el IGAC en Cobol.<br />
+                        - Almacena digitalmente la documentación de los trámites.<br />
+                        - Diseñado por un grupo de profesionales con más de 20 años de experiencia.<br />
+                        - Dispone de un módulo para que los ciudadanos soliciten sus trámites por Internet.</p>
+                    <p>
+                        <a href="./contactanos.html"><img id="contacto-boton-3" src="./assets/img/CONTACTANOS.png"
+                                class="mt-5 zoom" alt=""
+                                onmouseover="changeImage('contacto-boton-3', './assets/img/CONTACTANOS (Estado con cursor encima).png')"
+                                onmouseout="changeImage('contacto-boton-3', './assets/img/CONTACTANOS.png')"></a>
+                    </p>
+                </div>
+                <div class="col-md-6 tramites-text" id="text-3" style="display: none;">
+                    <h2 class="display-7 mb-4">HABILITACIÓN</h2>
+                    <p class="mb-3 fw-bold">Catastro PRO permite realizar de manera rápida y segura los
+                        siguientes
+                        trámites:</p>
+                    <p>Las entidades públicas nacionales o territoriales, pueden solicitar al Instituto
+                        Geográfico
+                        Agustín Codazzi la habilitación como Gestor Catastral para ofrecer servicios catastrales
+                        en
+                        todo el país.<br /> <span class="fw-bold">¿Quiénes pueden ser gestores
+                            catastrales?</span><br /> • Entidades territoriales
+                        (departamento, municipio o distrito).<br /> • Entidades nacionales que deban realizar
+                        actividades
+                        catastrales como parte de sus funciones.<br /> • Esquemas Asociativos Territoriales</p>
+                    <p>
+                    <p>
+                        <a href="./contactanos.html"><img id="contacto-boton-4" src="./assets/img/CONTACTANOS.png"
+                                class="mt-5 zoom" alt=""
+                                onmouseover="changeImage('contacto-boton-4', './assets/img/CONTACTANOS (Estado con cursor encima).png')"
+                                onmouseout="changeImage('contacto-boton-4', './assets/img/CONTACTANOS.png')"></a>
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="objetivos-home section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sistema-intuitivo">
+                        <h2>NUESTRO SISTEMA INTUITIVO</h2>
+                        <p>Catastro PRO es la solución definitiva para la gestión catastral<br /> moderna. Catastro PRO
+                            opera
+                            100%
+                            en la nube, lo que<br /> significa que solo necesitas una conexión a Internet para<br />
+                            acceder a
+                            todas
+                            sus
+                            funciones. Simplifica tu trabajo y<br /> gestiona tus datos catastrales desde cualquier
+                            lugar
+                            con<br />
+                            Catastro PRO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="objetivos">
+                        <h2>OBJETIVOS</h2>
+                        <p>En pleno cumplimiento de la legislación colombiana<br /> vigente, Catastro PRO se destaca
+                            como
+                            la
+                            solución líder<br /> en la implementación del catastro multipropósito bajo el<br /> modelo
+                            LADM-COL.
+                            Nuestra
+                            plataforma proporciona<br /> información precisa y constantemente actualizada sobre<br /> el
+                            territorio,
+                            contribuyendo a la formulación de políticas<br /> públicas más efectivas y a la promoción
+                            del
+                            acceso a
+                            la<br /> propiedad para todos los ciudadanos. De esta manera,<br /> facilitamos que los
+                            ciudadanos
+                            estén
+                            en
+                            conformidad con<br /> la ley y accedan a una variedad de servicios financieros y<br />
+                            gubernamentales,
+                            mejorando su calidad de vida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nosotros-home section" id="nosotros-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 nosotros-home-text">
+                    <h2>NOSOTROS</h2>
+                    <p>Somos una empresa colombiana líder en el desarrollo de software con experiencia en el campo
+                        catastral.<br />Nuestro conocimiento abarca áreas clave, como los Sistemas de Información
+                        Geográfica (SIG), el reconocimiento predial, las metodologías para la actualización
+                        catastral y
+                        el cálculo de avalúos. <br />CATASTRO PRO, diseñado para brindar un sólido soporte a todas
+                        las
+                        operaciones catastrales de su municipio, cumpliendo con las regulaciones colombianas y
+                        proporcionando una eficiencia incomparable en todos los trámites catastrales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios-home section">
+        <div class="container">
+            <div class="row text-center d-flex beneficios-iconos-1">
+                <div class="col-md-4">
+                    <img src="./assets/img/Icono potente.png" alt="">
+                    <h2 class="fw-bolder mt-2">POTENTE</h2>
+                    <p>La herramienta informática<br /> que muestra el catastro<br /> como debe ser.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/Icono Rapido.png" alt="">
+                    <h2 class="fw-bolder mt-2">RÁPIDO</h2>
+                    <p>Centraliza en un sólo lugar la<br /> cartografía predial,<br /> imágenes satelitales,
+                        capas<br />
+                        del EOT y POT.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/Icono organizado.png" alt="">
+                    <h2 class="fw-bolder mt-2">ORGANIZADO</h2>
+                    <p>Ajustado a la legislación<br /> catastral colombiana,<br /> brindando seguridad a los<br />
+                        trámites de mutaciones.</p>
+                </div>
+            </div>
+            <div class="row text-center d-flex beneficios-iconos-2">
+                <div class="col-md-4 .icono">
+                    <img src="./assets/img/Icono practico.png" alt="">
+                    <h2 class="fw-bolder mt-2">PRÁCTICO</h2>
+                    <p>Facilita la administración y<br /> planeación territorial<br /> mediante el uso de la<br />
+                        cartografía
+                        permitiendo<br />
+                        interrelacionarse con<br /> imágenes satelitales de<br /> Google y Bing.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/Icono robusto.png" alt="">
+                    <h2 class="fw-bolder mt-2">ROBUSTO</h2>
+                    <p>Ofrece soporte total a los<br /> procesos de Conservación y<br /> Actualización Catastral
+                        para<br /> que los
+                        Gestores Catastrales<br /> operen su catastro de forma<br /> autónoma.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/img/Icono oportuno.png" alt="">
+                    <h2 class="fw-bolder mt-2">OPORTUNO</h2>
+                    <p>Permite la implementación<br /> del catastro multipropósito<br /> proporcionando
+                        información<br /> precisa y
+                        actualizada del<br /> territorio.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 beneficios-title">
+                    <h2>SISTEMA FUNCIONAL PRO</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactanos-home section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 text-center">
+                    <div class="contactanos-text">
+                        <h2>CONTÁCTANOS</h2>
+                        <p class="mt-5">Estamos aquí para ayudar</p>
+                        <p><a href="mailto:comercial@catastropro.com.co?subject=Asunto&body=Mensaje">Clic
+                                aquí para cotizar: comercial@catastropro.com.co</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-home section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-md-8">
+                        <h2>SOFTWARE PARA LA GESTIÓN CATASTRAL</h2>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-md-10 footer-newsletter d-flex align-tems-center">
+                        <p>No pierdas la oportunidad de estar entre los mejores.</p>
+                        <form action="" method="post" class="ml-3">
+                            <input type="email" name="email"><input type="submit" value="Únete ahora">
+                        </form>
+                    </div>
+                </div>
+                <div class="linea mt-4"></div>
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <p>www.catastropro.com.co Todos los derechos reservados</p>
+                        <p>Copyright © 2023 - 2024</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./assets/img/Linea_grafica_megativo_-05.png" class="h-50 pt-3" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./assets/img/lOGO_CREACIONES_DIGITALES-03.png" class="h-50 pt-3" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./assets/img/Logo_Horizontal_Negativo_Catas.png" class="h-50 pt-3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/fullpage/fullpage.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
